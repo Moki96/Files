@@ -43,7 +43,7 @@ static void Input()
 
     if(!File.Exists(searchedFile))
     {
-        File.Create(searchedFile);
+        File.Create(searchedFile).Close();
         Console.WriteLine("Файл List of Employees.txt создан");
     }
     else
